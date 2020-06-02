@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F8F3;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+.container li {
+    /*float center;*/
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+ .container .current a {
+    color: #78BDC4;
+    font-weight: bold;
+}
+
+p a , .container .current a{
+    text-decoration: none;
+}
+
+.container {
+    max-width: 340px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.form-wrap {
+    margin-top: 30%;
+    background-color: #78BCC4;
+    padding: 20px;
+}
+
+.form-wrap h1,
+p {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: #49c1a2;
+}
+
+.btn {
+    background-color: #F7444E;
+    border: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+	width: 100%;
+}
+
+.btn:hover {
+    /*color: #37a08e;*/
+		background:#F7F8F3;
+	color:#222222;
+
+}
+
+.primary {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bottomText {
+    font-size: 12px;
+}
+
+.form-wrap h1 {
+    margin-bottom: 10px;
+}
+
+.form-wrap input {
+    width: 100%;
+    margin: 5px;
+    margin-left: 0;
+}

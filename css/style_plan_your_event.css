@@ -1,0 +1,65 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('../images/applause-audience-band-celebration-1120162.jpg') no-repeat
+    center center/cover;
+    font-size: 14px;
+}
+
+.container
+{
+    max-width: 320px;
+    background: #fff;
+    margin: auto;
+    padding: 20px;
+    
+    
+}
+#login
+{
+    padding: 20px;
+}
+.container h1
+{
+    padding-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: coral;
+}
+.primary
+{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+a
+{
+    text-decoration: none;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 10px;
+    background: #333 ;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    padding-left: 100px;
+    padding-right:100px;
+}
+a:hover
+{
+    background: rgb(219, 114, 76);
+    color: #fff;
+}
+.container input
+{
+    width: 100%;
+}
+
+
+

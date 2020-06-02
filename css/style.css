@@ -1,0 +1,320 @@
+.logo
+{
+	float:left;
+	width:150px;
+	height:80px;	
+}
+
+html{
+	height:100%;
+}
+body{
+	font-family: Arial, halvetica, sans-serif;
+	font-size: 15px;
+	line-height:1.5;
+	
+	padding:0;
+	margin:0;
+	background-color:#F7F8F3;
+	height:100%;
+	color:#28104E;
+	
+}
+
+/*global*/
+
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+	font-size: 17px;
+}
+.page-wrapper{
+	min-height:20%;
+}
+.button{
+	height:40px;
+	background:#534859;
+	border:0;
+	padding-left:20px;
+	padding-right:20px;
+	color:#F7F8F3;
+	font-size:16px;
+}
+.button:hover{
+	
+	background:#F7F8F3;
+	color:#222222;
+}
+.imagesDesc h2{
+	color:#78BDC4;
+}
+.genCont h2{
+	color:#78BDC4;
+	text-align:center;
+}
+
+.genCont p{
+	color:#28104E;
+	text-align:center;
+	font-size: 17px;
+}
+
+
+/*header*/
+ 
+header{
+	background:#F7F8F3;
+	color:#F8444F;
+	padding-top:30px;
+	min-height:70px; 
+}
+
+header a{
+	color:#002C3E ;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:16px;
+}
+
+header ul{
+	margin:0;
+	padding:0;
+}
+
+header li{
+	/*float center;*/
+	display:inline;
+	padding: 0 20px 0 20px;
+	
+}
+
+header nav{
+	float:right;
+	margin-top:30px;
+}
+
+header .current a{
+	color:#78BDC4;
+	font-weight:bold;
+}
+
+header a:hover{
+	color:#F76754;/*#CCC;*/
+	font-weight:bold;
+}
+
+/*showcase*/
+#showcase{
+	min-height:450px;
+	background:url('../images/hotel_intro1.jpg')no-repeat 0,-200px;;
+	background-size:cover;
+	text-align:right;
+}
+#showcase h1{
+	margin-top:350px;
+	margin-bottom:10px;
+}
+
+/*icons list*/
+.genCont .iconGrid {
+	display:grid;
+	grid-template-columns: repeat(8,1fr);
+	justify-items: center;
+	 align-items: center;
+	 margin:auto;
+	 
+	 
+	 
+	 opacity:0;
+	 animation-name:iconAnim;
+	 animation-duration:4s;
+	 animation-delay:2.5s;
+	 animation-fill-mode:forwards;
+}
+@keyframes iconAnim{
+	0% {opacity:0;}
+	100% {opacity:1;}
+}
+
+.genCont .iconGrid img{
+	width:50px;
+	height:50px;
+}
+
+/*Footer*/
+
+ footer{
+	background:#F8444F;
+	height:300px;	
+	position: relative;
+}
+
+footer .ft-content{
+	height:300px;
+	display:flex;
+}
+
+footer .foot-add{
+	color:#052D49;
+	font-size: 20px;
+	text-align:left;
+	font-weight:bold;
+}
+
+footer .ft-content .foot{
+	flex:1;
+	border:1px solid white;
+	padding:25px;
+	
+}
+
+footer .foot-subs {
+	padding:15px;
+	color:#052D49;
+	
+}
+
+footer .footer-links{
+	color:#052D49;
+}
+
+footer .footer-links .social,{
+	width:50px;
+	height:50px;
+	padding:3px;
+}
+
+footer .foot-subs form{
+	float:right;
+	color:#78BDC4;
+	
+}
+
+footer input[type="email"]{
+	padding:4px;
+	height:25px;
+	width:250px;
+}
+
+footer .foot-bottom{
+	
+	background:#F8434F;
+	position:absolute;
+	height:50px;
+	width:100%;
+	position:absolute;
+	padding-top: 20px;
+	text-align:center;
+	color:#052D49;
+	
+}
+
+
+
+/*dine events stay*/
+
+.menu-grid{
+	padding:10px;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap:10px;
+}
+
+.menu-grid .imageEvent{
+	position:relative;
+	animation:AnimRtL;
+	animation-duration:2s;
+	
+}
+.menu-grid  img{
+	width:100%;
+	max-height:400px;
+}
+
+.menu-grid .Event-desc{
+	position: absolute;
+	bottom:30px;
+	right:20px;
+	color:white;	
+}
+
+.menu-grid .Dine-desc{
+	position: absolute;
+	bottom:30px;
+	right:20px;
+	color:white;	
+}
+.menu-grid .imageDine{
+	position:relative;
+	animation:AnimTtB;
+	animation-duration:2s;
+	
+}
+
+.menu-grid .Stay-desc{
+	position: absolute;
+	bottom:30px;
+	right:20px;
+	color:white;	
+}
+.menu-grid .imageStay{
+	position:relative;
+	animation:AnimLtR;
+	animation-duration:2s;
+	
+}
+
+ .menu-grid a{
+	color:#f7c0a8 ;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:17px;
+}
+
+
+
+/*animation of intro images*/
+.images img{
+	width:100%;
+	max-height:400px;
+	
+	position:relative;
+	animation:AnimRtL;
+	animation-duration:2s;
+}
+
+@keyframes AnimRtL{
+	0%{right:-1000px;}
+	
+	100%{right:10px;}
+}
+
+.imagesDesc{
+	font-size:18px;
+	padding:10px;
+	
+	position:relative;
+	animation:AnimLtR;
+	animation-duration:2s;
+	
+	
+}
+
+@keyframes AnimLtR{
+	0%{left:-1000px;}
+	
+	100%{left:5px;}
+}
+
+@keyframes AnimTtB{
+	0%{top:-1000px;}
+	
+	100%{top:5px;}
+}
+
+.grid-intro{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap:10px;
+}
